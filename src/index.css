@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --font-primary: "Outfit", serif;
+  --font-secondary: "Nunito", sans-serif;
+  --white-primary: #FFFFFF;
+  --white-light: #FEFEFE;
+  --white-muted: #E3E3E3;
+  --white-soft: #F3F3F3;
+
+  --black-primary: #000000;
+  --black-light: #1F1F1F;
+
+  --poison-purple: #A25FBE;
+
+
+  --pokedex-card-radius: 8px;
+  --pokedex-card-padding: 1.4rem;
+  --pokedex-card-img-container-background: var(--white-muted);
+  --pokedex-card-img-container-radius: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  color: var(--black-light);
+  background: var(--white-light);
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+#app {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  max-width: 2180px;
+  font-weight: normal;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 14rem;
+  padding-inline: 8rem;
+}
+
+
+.primary-link {
+  width: fit-content;
+  padding: 0.25rem 0.8rem;
+  font-family: var(--font-secondary);
+  background: var(--black-light);
+  color: var(--white-primary);
+  font-size: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.primary-link:hover {
+  opacity: 0.8;
+}
+.primary-link:active {
+  scale: 0.98;
+}

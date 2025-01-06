@@ -1,0 +1,19 @@
+
+
+.primary_active_link {
+    background: var(--black-light);
+    color: var(--white-primary);
+    border-radius: 16px;
+    width: fit-content;
+    padding: 0.25rem 0.8rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+.primary_inactive_link {
+    width: fit-content;
+    padding: 0.25rem 0.8rem;
+    font-family: var(--font-secondary);
+    color: var(--black-light);
+    font-size: 20px;
+    cursor: pointer;
+}

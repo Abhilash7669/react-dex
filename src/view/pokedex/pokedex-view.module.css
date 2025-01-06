@@ -1,0 +1,15 @@
+
+.poke_dex_wrapper {
+    width: 100%;
+}
+.poke_dex_wrapper > h1 {
+    text-align: center;
+    padding-block: 1rem;
+}
+.poke_dex_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding-block: 1.2rem;
+}
